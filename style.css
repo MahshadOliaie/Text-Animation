@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6em;
+    background-color: #eae3c9;
+}
+
+h1 {
+    background-image: url(./bg.JPG);
+    background-clip: text;
+    color: transparent;
+    background-size: 150% 50%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: left;
+    animation: wave 3s linear forwards;
+}
+
+@keyframes wave {
+    100% {
+        background-position-x: right;
+        background-size: 100% 300%;
+    }
+}
